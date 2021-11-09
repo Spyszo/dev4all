@@ -1,0 +1,3 @@
+<footer>
+© Szymon Wesołowski
+</footer>

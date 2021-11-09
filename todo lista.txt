@@ -1,0 +1,45 @@
+Ogólne:
+##  - ciemny motyw
+##  - powiadomienie o ciasteczkach
+##  - zrobić isseta po przecinku
+#   - lepsza paginacja
+##  - użyć exit(), empty()
+#   - password_hash(), password_verify()
+#   - lepsza walidacja rejestracji i logowania: preg_match, filter_var
+    - aktywacja konta
+#   - możliwość wyszukiwania użytkowników
+    - logowanie z google
+#   - dostosowanie do urządzeń mobilnych
+    - blokada na ip jeżeli za dużo błędnych haseł
+    - opóźnienie kilkuset milisekund w każdym req
+#   - snackbar w zależności od res
+##  - większość requestów w ajaxie
+##  - usunięcie animacji z przycisków like i bookmark po wczytaniu strony
+    - wyłączenie okna dialogowego za pomocą ESC
+    - poprawić z openCon na openConn lub coś innego
+
+Komentarze: 
+    - odpowiedzi do każdego z @name na początku
+    - podświetlenie i przewinięcie strony do danego komentarza
+    - htmlspecialchars w celu zabezpieczenia przed atakami XSS
+
+Admin:
+#   - panel admina
+#   - zarządzanie postami i ich komentarzami
+##  - wymóg podania powodu usunięcia czegoś
+##  - akceptacja postów
+
+Użytkownik:
+#   - profil ze statystykami i listą wszystkich postów
+#   - zgłaszanie postów i komentarzy
+    - powiadomienia
+    - zapomniałem hasła
+#   - zmiana hasła w ustawieniach
+    - ustawienia: np. newsletter, powiadomienia, zmiana koloru wiodącego
+#   - prywatne wiadomości
+#   - udostępnianie posta
+    - ograniczenie liczby komentarzy (spam)
+#   - dokończyć WYSIWYG
+
+- cookies img
+

@@ -1,0 +1,122 @@
+.userPage {
+    display: flex;
+    justify-content: center;
+}
+
+.userPage .user {
+    width: 250px;
+    background-color: var(--backgroundColor800);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.userPage .user .avatar {
+    width: 200px;
+}
+
+.userPage .user .fullName {
+    font-size: 1.2rem;
+}
+
+.userPage .user .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 10px;
+}
+
+.userPage .user .buttons button {
+    background-color: transparent;
+    color: var(--contrastTextColor900);
+}
+
+.userPage .user .buttons button.disabled {
+    opacity: 0.4;
+}
+
+.userPage .user .buttons button.disabled:hover {
+    background-color: initial;
+    cursor: auto;
+}
+
+.userPage .user .buttons button:hover {
+    background-color: var(--backgroundColor700);
+}
+
+.report-user {
+    width: 400px;
+}
+
+.report-user .reason {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.report-user .reason textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: var(--backgroundColor600);
+    padding: 10px;
+    resize: vertical;
+    outline: none;
+    color: var(--contrastTextColor900);
+}
+
+.report-user .report-buttons {
+    width: 250px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.report-user .report-buttons button {
+    width: calc(50% - 5px);
+    background-color: var(--backgroundColor600);
+    color: var(--contrastTextColor900)
+}
+
+.send-message {
+    width: 400px;
+}
+
+.send-message .message {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.send-message .message textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: var(--backgroundColor600);
+    padding: 10px;
+    resize: vertical;
+    outline: none;
+    color: var(--contrastTextColor900);
+}
+
+.send-message .message-buttons {
+    width: 250px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.send-message .info {
+    width: 75%;
+}
+
+.send-message .message-buttons button {
+    width: calc(50% - 5px);
+    background-color: var(--backgroundColor600);
+    color: var(--contrastTextColor900)
+}
+

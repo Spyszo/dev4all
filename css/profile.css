@@ -1,0 +1,490 @@
+
+
+.floatfix {
+    clear: both;
+}
+
+.profile {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    column-gap: 10px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+.menu { 
+    flex-grow: 0;
+    width: 300px;
+    min-width: 300px;
+    color: var(--contrastTextColor900);
+    background-color: var(--backgroundColor800);
+    border-radius: 10px;
+    position: relative;
+    transition: .15s ease-out;
+}
+
+.menu > p { 
+    margin-left: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--contrastTextColor700);
+    font-size: 0.9em;
+}
+
+.menu ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    transition: right .1s ease-out;
+    color: var(--contrastTextColor900);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-left: 15px;
+    transition: padding .1s ease-out;
+}
+
+.menu ul li:hover {
+    background-color: var(--backgroundColor700);
+}
+
+.menu ul li.active {
+    background-color: var(--backgroundColor700);
+}
+
+.menu ul li.disabled {
+    opacity: 0.3;
+}
+
+.menu ul li.disabled:hover {
+    background-color: initial;
+}
+
+.menu ul li .material-icons {
+    font-size: 28px;
+}
+
+.menu .minimize-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--backgroundColor700);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu .minimize-button span {
+    color: var(--contrastTextColor900)
+}
+
+.menu .account-info {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 80px;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+}
+
+.menu .account-info .name {
+    width: 140px;
+    font-size: 1.2rem;
+}
+
+.menu .account-info .avatar svg{
+    height: 70px;
+    position: relative;
+    transition: .15s ease-out;
+    margin-left: 6px;
+}
+
+.menu.minimized { 
+    width: 60px;
+    min-width: 60px;
+}
+
+.menu.minimized .account-info .avatar svg {
+    height: 50px;
+}
+
+.menu.minimized .account-info .name {
+    color: transparent;
+}
+
+.menu.minimized ul li {
+    color: transparent;
+    padding-left: 6px;
+}
+
+.menu.minimized ul li span {
+    color: var(--contrastTextColor900);
+}
+
+.content {
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 15px;
+    padding-top: 20px;
+    position: relative;
+    background-color: var(--backgroundColor800);
+}
+
+.content > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundColor800);
+    border-radius: 10px;
+}
+
+.content .closeContent {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    background-color: var(--backgroundColor900);
+    border-radius: 50%;
+    transition: .1s ease-out;
+}
+
+.content .closeContent:hover {
+    background-color: var(--backgroundColor600);
+}
+
+.content .closeContent img{
+    opacity: 0.7;
+}
+
+
+.content .item {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content .item-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 33px;
+    color: var(--contrastTextColor900)
+}
+
+.profile-info {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+
+.profile-info .name {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--contrastTextColor900);
+}
+
+.profile-info .email {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 300;
+    color: var(--contrastTextColor900);
+}
+
+.profile-info .avatar {
+    position: relative;
+    cursor: pointer;
+    height: 160px;
+    width: 160px;
+}
+
+.profile-info .avatar span {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--backgroundColor700);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info .avatar span:hover {
+    background-color: var(--backgroundColor600);
+}
+
+.profile-info button {
+    margin-top: 25px;
+    background-color: var(--backgroundColor700);
+    color: var(--contrastTextColor900);
+}
+
+.profile-info button:hover {
+    background-color: var(--backgroundColor600);
+}
+
+.last-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.last-posts p {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    align-self: center;
+    color: var(--contrastTextColor900);
+}
+
+.last-posts button {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    background-color: var(--backgroundColor700);
+    color: var(--contrastTextColor900);
+}
+
+.last-posts button:hover {
+    background-color: var(--backgroundColor600);
+}
+
+.post {
+    width: 100%;
+    height: 70px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--backgroundColor700);
+    color: var(--contrastTextColor700);
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.post:hover {
+    background-color: var(--backgroundColor600);
+}
+
+.post .image{
+    width: 120px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.post .title{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+.post .date{
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+/* Zapisane elementy */
+
+
+.bookmarks-list .post .delete {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookmarks-list .post .delete span {
+    font-size: 24px;
+}
+
+.bookmarks-list .post .delete:hover {
+    background-color: var(--backgroundColor500);
+}
+
+.bookmarks-getMoreButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.bookmarks-getMoreButton button{
+    padding: 10px 20px;
+    background-color: var(--backgroundColor700);
+    color: var(--contrastTextColor900);
+    font-size: 0.8rem;
+
+}
+
+.bookmarks-list p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* #modalBackground-changePassword {
+    visibility: visible;
+    z-index: 99;
+    opacity: 1;
+    left: 0;
+} */
+
+#modalBackground-changePassword form{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#modalBackground-changePassword label {
+    display: block;
+    text-indent: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#modalBackground-changePassword input {
+    background-color: var(--backgroundColor800);
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+#modalBackground-changePassword .submitButton {
+    margin: 20px 0;
+}
+
+
+.register-avatar-buttons button {
+    width: 150px;
+    background-color: var(--backgroundColor600);
+    color: var(--contrastTextColor900)
+}
+
+@media only screen and (max-width: 600px) { 
+
+    .menu {
+        overflow: hidden;
+        height: fit-content;
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content {
+        position: fixed;
+        height: 100%;
+        top: 100%;
+        left: 0;
+        transition: .15s ease-in;
+        z-index: 99;
+        padding-top: 0;
+        border-radius: 0;
+    }
+
+    .content .item {
+        overflow-y: auto;
+    }
+
+    .content .closeContent {
+        display: flex;
+    }
+
+    .last-posts p {
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-size: 1.7rem;
+    }
+
+    .post {
+        height: 60px;
+    }
+
+    .post .image {
+        width: 40px;
+        flex-shrink: 0;
+    }
+
+    .post .image img{
+        transform: rotate(-90deg);
+        height: 40px;
+        width: 80px;
+        position: relative;
+        left: -20px;
+        bottom: -10px;
+    }
+
+    .post .title {
+        font-size: 0.9rem;
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+
+    .post .date {
+        font-size: 0.8rem;
+        line-height: 60px;
+    }
+
+    footer {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px) { 
+    .post .date {
+        display: none;
+    }
+ }

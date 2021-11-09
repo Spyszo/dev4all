@@ -1,0 +1,67 @@
+.user {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: var(--backgroundColor800);
+    height: 50px;
+}
+
+.user > div {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.user .avatar {
+    height: 100%;
+}
+
+.user .avatar svg {
+    height: 100%;
+}
+
+.user button {
+    background-color: var(--backgroundColor700);
+    color: var(--contrastTextColor900);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.modalWindow.warning {
+    width: 500px;
+}
+
+.modalWindow.accept {
+    width: 300px;
+    row-gap: 30px;
+}
+
+.modalWindow.warning textarea {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--contrastTextColor900);
+    background-color: var(--backgroundColor600);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.modalWindow.warning .buttons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.modalWindow .buttons button {
+    color: var(--contrastTextColor900);
+    background-color: var(--backgroundColor600);
+    width: 100px;
+}
+
+.modalWindow.warning .buttons button:hover {
+    background-color: var(--backgroundColor500);
+}
