@@ -4,7 +4,8 @@ Portal społecznościowy stworzony jako szkolny projekt.
 
 [DEMO](https://dev4all.herokuapp.com/)
 
-#Funkcjonalność
+# Funkcjonalność
+
 Strona główna:
 - wyświetlanie postów
 - paginacja
