@@ -59,6 +59,10 @@ Biblioteki wykorzystane w projekcie:
 - QuillJS
 - Material Icons
 
+# Baza danych SQL
+
+![image](https://user-images.githubusercontent.com/16516058/142082847-04f7511a-1e0e-446d-b9be-d9b20621ca64.png)
+
 
 
     
