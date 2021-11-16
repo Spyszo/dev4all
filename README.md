@@ -50,6 +50,7 @@ Panel administratora:
 - zabezpieczenia strony
 - ustawienia użytkownika 
 - zapomniane hasło
+- usuwanie postów
 
 
 Biblioteki wykorzystane w projekcie:
