@@ -43,8 +43,4 @@
                 break;
         }
     })
-
-    $('body').on('resize', () => {
-
-    })
 </script>
